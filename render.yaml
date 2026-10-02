@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: mmd-billback-voucher
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run voucher_tool_web.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: VOUCHER_DATA_DIR
+        value: /var/data
+      - key: ALLOWED_EMAIL_DOMAIN
+        value: mmdusa.com
+    disk:
+      name: voucher-data
+      mountPath: /var/data
+      sizeGB: 1

@@ -1,0 +1,22 @@
+(DRAFT — not sent. Hand to MMD IT when ready.)
+
+Subject: App registration + subdomain for an internal web tool (Microsoft login)
+
+Hi [IT],
+
+I'm deploying a small internal web app for the team and want it gated behind
+our Microsoft 365 login. Could you please:
+
+1) Register an application in Entra ID (Azure AD) for sign-in, and send me:
+     - Application (client) ID
+     - A client secret (value)
+     - Directory (tenant) ID
+   Redirect URI to allow:
+     https://billbacks.mmdusa.com/oauth2callback
+   Sign-in should be limited to our @mmdusa.com accounts.
+
+2) Add a DNS CNAME so billbacks.mmdusa.com points to our host (I'll send the
+   exact target the host gives me once it's up).
+
+The app runs on Render (hosted), behind this login. Happy to walk through it.
+Thanks!

@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+_uploaded_voucher.pdf
+learned_voucher_map.json

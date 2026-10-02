@@ -1,0 +1,6 @@
+streamlit>=1.42
+pandas
+openpyxl
+pdfplumber
+xlsxwriter
+Authlib>=1.3.2
